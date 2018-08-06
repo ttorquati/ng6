@@ -1,0 +1,8 @@
+<h1>Posts</h1>
+
+<ul [@listStagger]="postos$">
+	<li *ngFor="let postos of postos$">
+		<a routerLink="">{{postos.title}}</a>
+		<p>{{ postos.body }}</p>
+	</li>
+</ul>

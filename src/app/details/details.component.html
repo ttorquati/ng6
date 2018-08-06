@@ -1,0 +1,11 @@
+<div *ngIf="user$">
+	<h1>{{user$.name}}</h1>
+
+	<ul [@listStagger]="user$">
+		<li><strong>Username:</strong> {{user$.username}}</li>
+		<li><strong>Email:</strong> {{user$.email}}</li>
+		<li><strong>Phone:</strong> {{user$.phone}}</li>
+		<li><strong>Address:</strong> {{user$.address.street}} {{user$.address.suite}}, {{user$.address.city}}</li>
+		<li><strong>Website:</strong> {{user$.website}}</li>
+	</ul>
+</div>
